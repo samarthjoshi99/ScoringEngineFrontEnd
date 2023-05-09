@@ -1,0 +1,21 @@
+.container {
+    display: flex;
+    height: 100vh;
+    padding-top: 64px; /* Adjust this value based on the height of your header */
+  }
+  
+  .sidenav-container {
+    flex: 0 0 auto;
+    height: 100%;
+  }
+  
+  .sidenav {
+    height: 100%;
+    overflow-y: auto;
+  }
+  
+  .content {
+    flex: 1 1 auto;
+    padding: 16px;
+  }
+  

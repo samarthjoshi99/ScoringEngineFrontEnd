@@ -1,0 +1,23 @@
+<div class="container">
+  <app-header class="header"></app-header>
+
+  <mat-sidenav-container class="sidenav-container">
+    <mat-sidenav #sidenav mode="side" opened="false" class="sidenav">
+      <mat-nav-list>
+        <!-- Add your sidebar navigation items here -->
+        <a mat-list-item routerLink="/">Home</a>
+        <a mat-list-item routerLink="/about">About</a>
+        <a mat-list-item routerLink="/contact">Contact</a>
+      </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content>
+      <button mat-icon-button (click)="sidenav.toggle()">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <div class="content">
+        <!-- Your page content here -->
+        <ng-content></ng-content>
+      </div>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</div>
