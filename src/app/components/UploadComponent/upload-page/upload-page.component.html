@@ -1,0 +1,11 @@
+<H1>***************</H1>
+<div>
+  <h2>Upload PDF</h2>
+  <input type="file" (change)="onFileSelected($event)">
+  <button mat-raised-button color="primary" (click)="uploadFile()" [disabled]="!selectedFile">Upload</button>
+  <p *ngIf="uploadSuccess" class="success-message">File uploaded successfully.</p>
+  <p *ngIf="uploadFailure" class="error-message">Upload failed. Please try again.</p>
+</div>
+<H1>***************</H1>
+<H1>***************</H1>
+<H1>***************</H1>

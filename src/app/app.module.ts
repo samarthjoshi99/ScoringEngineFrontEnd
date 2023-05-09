@@ -10,17 +10,20 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 
 import { HeaderComponent } from './components/HeaderComponent/header/header.component';
 import { FooterComponent } from './components/FooterComponent/footer/footer.component';
 import { SidebarComponent } from './components/SidebarComponent/sidebar/sidebar.component';
+import { UploadPageComponent } from './components/UploadComponent/upload-page/upload-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    SidebarComponent
+    SidebarComponent,
+    UploadPageComponent
   ],
   imports: [
     BrowserModule,
@@ -30,7 +33,8 @@ import { SidebarComponent } from './components/SidebarComponent/sidebar/sidebar.
     MatIconModule,
     MatToolbarModule,
     MatSidenavModule,
-    MatListModule
+    MatListModule,
+    MatSnackBarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
