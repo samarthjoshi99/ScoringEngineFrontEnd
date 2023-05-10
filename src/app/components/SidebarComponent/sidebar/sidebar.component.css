@@ -1,7 +1,6 @@
 .container {
   display: flex;
   height: 100vh;
-  padding-top: 64px; /* Adjust this value based on the height of your header */
 }
 
 .sidenav-container {
@@ -14,7 +13,7 @@
   overflow-y: auto;
 }
 
-.content {
-  flex: 1 1 auto;
+.sidebar-content {
   padding: 16px;
 }
+
