@@ -8,15 +8,14 @@ import { MatSnackBar } from '@angular/material/snack-bar';
   templateUrl: './upload-page.component.html',
   styleUrls: ['./upload-page.component.css']
 })
+
 export class UploadPageComponent {
+  
   selectedFile: File | null = null;
   uploadSuccess = false;
   uploadFailure = false;
 
-  constructor(
-    private uploadService: UploadService,
-    private snackBar: MatSnackBar
-  ) { }
+  constructor(private uploadService: UploadService,private snackBar: MatSnackBar) { }
 
   onFileSelected(event: any): void {
     this.selectedFile = event.target.files[0];

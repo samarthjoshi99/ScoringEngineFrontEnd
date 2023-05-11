@@ -9,7 +9,7 @@ export class UploadService {
   constructor() { }
 
   uploadFile(file: File): Observable<boolean> {
-    return new Observable<boolean>((observer) => {
+    return new Observable<boolean> ((observer) => {
       const allowedTypes = ['application/pdf'];
 
       if (!allowedTypes.includes(file.type)) {
