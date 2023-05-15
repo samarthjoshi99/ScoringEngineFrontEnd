@@ -1,21 +1,21 @@
-
 import { UploadService } from 'src/app/services/FileUploadService/file-upload.service';
 import { Component } from '@angular/core';
 import { MatSnackBar } from '@angular/material/snack-bar';
+
 
 @Component({
   selector: 'app-upload-page',
   templateUrl: './upload-page.component.html',
   styleUrls: ['./upload-page.component.css']
 })
-
 export class UploadPageComponent {
-  
   selectedFile: File | null = null;
   uploadSuccess = false;
   uploadFailure = false;
+  jobDescription: string = '';
+  jobDescriptionSubmitted = false;
 
-  constructor(private uploadService: UploadService,private snackBar: MatSnackBar) { }
+  constructor(private uploadService: UploadService, private snackBar: MatSnackBar) {}
 
   onFileSelected(event: any): void {
     this.selectedFile = event.target.files[0];
@@ -43,5 +43,9 @@ export class UploadPageComponent {
         }
       );
     }
+  }
+
+  submitJobDescription(): void {
+    this.jobDescriptionSubmitted = true;
   }
 }
